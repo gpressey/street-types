@@ -27,7 +27,7 @@ csd <- unique(c$csduid_l)
 
 # WARNING: produces approximately 4700 image files, ~1-2 hours total run time
 
-map(csd[1:10], function(csd){
+map(csd, function(csd){
   shp <- c %>% 
     filter(csduid_l == csd)
   
