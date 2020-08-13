@@ -38,8 +38,6 @@ map(csd, function(csd){
     tally() %>% 
     arrange(-n)
   
-  #print(top)
-  
   shp <- shp %>% 
     mutate(
       suffix_top = 
